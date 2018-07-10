@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fab 14-principle page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="assets\css\offcanvacsNavigation.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+  </head>
+  <body>
+    <section id="app">
+      <a id="offCanvas" class="hamburger"><i class="ti-menu"></i></a>
+      <!-- Offcanvas Navigation Start -->
+      <div class="nav-offcanvas">
+        <button type="button" class="close" id="offCanvasClose" aria-label="Close">
+          <i class="ti-close"></i>
+        </button>
+        <div class="nav-offcanvas-menu">
+          <ul>
+            <li><a href="?page=readme.md">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Offcanvas Navigation End -->
+      <div class="offcanvas-overlay"></div>
+
+      <!-- Body Elements -->
+      <div class="content-wrapper">
+        <h1>
+          Simple Off-Canvas Navigation</h1>
+          <p>
+            Click on Hamburger Icon to Open It.
+          </p>
+          <div class="modal_doc" v-if="seen.modal">
+            <div class="container">
+              <button class="btn" v-on:click="close_modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+              <img v-bind:src="template.imgSrc_modal" class="zoom" alt="">
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/marked"></script>
+      <script type="text/javascript" src="assets\js\vue.min.js"></script>
+      <script type="text/javascript" src="assets\js\script.js"></script>
+    </footer>
+  </body>
+</html>
