@@ -4,17 +4,6 @@ Offcanvas Navigation css
 
 body {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-}
-
-h1 {
-  font-size: 50px;
-  color: white;
-}
-
-p {
-  color: white;
 }
 
 .content-wrapper {
@@ -23,7 +12,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   background: linear-gradient(135deg, #ff5f6d 0%, #ffc371 100%);
 }
 

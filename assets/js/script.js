@@ -1,22 +1,11 @@
-// Off Canvas Menu Open & Close
-    $('#offCanvas').on('click', function () {
-        $('.nav-offcanvas').addClass('open');
-        $('.offcanvas-overlay').addClass('on');
-    });
-    $('#offCanvasClose, .offcanvas-overlay').on('click', function () {
-        $('.nav-offcanvas').removeClass('open');
-        $('.offcanvas-overlay').removeClass('on');
-    });
 
 function getUrlParameter(sParam) {
   var sPageURL = decodeURIComponent(window.location.search.substring(1)),
   sURLVariables = sPageURL.split('&'),
   sParameterName,
   i;
-
   for (i = 0; i < sURLVariables.length; i++) {
     sParameterName = sURLVariables[i].split('=');
-
     if (sParameterName[0] === sParam) {
       return sParameterName[1] === undefined ? true : sParameterName[1];
     }
@@ -26,16 +15,38 @@ function getUrlParameter(sParam) {
 var layout_page = new Vue({
   el: '#app',
   data: {
+    seen:{
+      model: false,
+    },
     markdown: {
-      file1: {
-        title0: "Introduction",
+      home: {
+        title: "Introduction",
         index: "readme.md",
         content: "",
-      }
+      },
+      stretchis: {
+        title: "Introduction",
+        index: "stretchis.md",
+        content: "",
+      },
+      printScreen: {
+        title: "Introduction",
+        index: "stretchis.md",
+        content: "",
+      },
     },
   },
   computed: {
+    get_document: function() {
+      // console.log(getUrlParameter('page'));
+      if(getUrlParameter('page') == null ) {
+        return this.markdown.home.content
+      } else {
+        return this.markdown[getUrlParameter('page')].content
 
+      }
+      // console.log(this.markdown[my_url].content);
+    },
   },
   methods: {
 
@@ -50,14 +61,15 @@ Object.size = function(obj) {
     }
     return size;
 };
+
 var size = Object.size(layout_page.markdown);
 var control_stop = 0;
 // loading of every markdown pages from md_files referenced in this.markdown
 $.each( layout_page.markdown, function(name, value) {
-  $.get( 'md_files/' + value.index, function( markdownContent ) {
+  $.get( 'assets/md/' + value.index, function( markdownContent ) {
     layout_page.markdown[name].content = marked( markdownContent )
   },'html').fail(function(){
-    console.log('Mauvais chargement des docs')
+    console.alert('Mauvais chargement des docs')
   }).done(function( ) {
     // Modal Img Creation
     if( control_stop < size ){
@@ -73,4 +85,14 @@ $.each( layout_page.markdown, function(name, value) {
     }
   })
 });
-console.log(getUrlParameter('page'));
+// console.log(getUrlParameter('page'));
+
+// Aside Navigation
+$('#offCanvas').on('click', function () {
+    $('.nav-offcanvas').addClass('open');
+    $('.offcanvas-overlay').addClass('on');
+});
+$('#offCanvasClose, .offcanvas-overlay').on('click', function () {
+    $('.nav-offcanvas').removeClass('open');
+    $('.offcanvas-overlay').removeClass('on');
+});

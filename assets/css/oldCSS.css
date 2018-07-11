@@ -1,0 +1,311 @@
+@font-face {
+  font-family: 'ascii';
+  src:  url('../fonts/asciid.ttf'); /* Safari, Android, iOS */
+}
+
+li {
+  list-style-type: none;
+}
+.layout-general {
+  transition: 0.5s;
+  /* height: 100vh; */
+}
+.col.layout-general.home, .render.home {
+	background-color: rgba(0,0,0,0);
+}
+.render {
+	background-color: #DDE8DB;
+	color: black;
+}
+.nav-theme-1 {
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	z-index: 10;
+	background-color: #cbdac8;
+	/* border: black solid 2px; */
+	border-top: none;
+	padding: 2em 0;
+}
+/* homepage */
+.home > .container {
+	padding-top: 20vh;
+}
+.home > .container pre {
+  text-align: center;
+  line-height: 1.1vw;
+}
+.home pre {
+  font-size: 0.8vw;
+}
+.aside-doc {
+  position: fixed;
+  /* background-color: rgba(247,139,99,1); */
+}
+.social .fa {
+	font-size: 25px;
+	/* background-color: black; */
+	/* padding: 5px; */
+	margin: 0;
+  text-align: center;
+	color: black;
+}
+a.nope:hover {
+  text-decoration: none;
+}
+.aside-doc li{
+  /* background-color: rgba(247,139,99,1); */
+}
+ .main.aside-them-2{
+  text-align: right;
+  font-size: 1.5em;
+  margin-top: 6em !important;
+  position: fixed;
+  transform: translateY(0);
+  right: 70%;
+}
+.main.aside-them-2 li ul {
+  padding-left: 0;
+  max-height: 70vh;
+  /* overflow-y: scroll; */
+  font-size: 0.6em;
+}
+.main.aside-them-2 a {
+  padding-right: 1em;
+  font-size: 0.7em;
+  /* font-size */
+}
+
+.nav-theme-1 ul {
+  margin-bottom: 0;
+}
+
+.nav-theme-1 a {
+	color: black;
+	/* background-color: #58C4AF; */
+	background-color: #cbdac8;
+	padding: 0.5em 1em;
+	text-transform: uppercase;
+	font-size: 100%;
+	transition: 0.5s;
+	position: relative;
+	box-shadow: 0 0 #b0c1ad;
+	top: 5px;
+	left: 5px;
+	border-left: solid 1px rgba(255,255,255,0);
+	transform: scale(0.2);
+	border-top: solid 1px rgba(255,255,255,0);
+}
+.nav-theme-1 a:hover {
+	box-shadow: 15px 15px #b0c1ad;
+	top: 0;
+	left: 0;
+	transform: scale(1);
+	border-top: solid 1px white;
+	border-left: solid 1px white;
+	text-decoration: none;
+}
+.main.nav-doc {
+	text-align: right;
+  font-size: 2em;
+}
+.main.aside-them-2 a {
+    color: #4c4c4c;
+}
+.main.aside-them-2 .active a {
+	background-color: #C6D0C4;
+	font-weight: bold;
+	color: black;
+	padding: 0.5em 1.5em 0.5em 0.5em;
+}
+.theme-1 {
+  background-image: url('../img/MaterialsStudy2D.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* text-align: center; */
+}
+.theme-1 .row > aside {
+  /* color: white; */
+  /* background-color: #00C5AF; */
+  padding: 0;
+  position: relative;
+}
+.theme-1 .row > aside:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100% 0 0 100px;
+  border-color: transparent transparent transparent
+}
+.theme-1 .row > aside > .main {
+  display: block;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 50%;
+  /* transform: translateY(-50%); */
+  width: 80%;
+}
+.theme-doc {
+  background-image: none;
+}
+.blur {
+  filter: blur(2px);
+  opacity: 0.55;
+  transform: translateY(-50%) translateX(-5%) scale(1.1);
+  transition: 0.5s;
+}
+.nav-theme-1.blur {
+  transform: translateY(0) translateX(0) scale(1.1);
+}
+.blur:hover {
+  filter: blur(0);
+  opacity: 1;
+  transform: translateY(-50%) translateX(0) scale(1);
+}
+.nav-theme-1.blur:hover {
+  transform: translateY(0) translateX(0) scale(1);
+}
+.theme-1 .row > aside > .main:hover {
+}
+.theme-1 .row > aside > .main span{
+    padding: 0.5em 1em;
+  	color: white;
+  	background-color: #CBDAC8;
+  	/* background-color: #58C4AF; */
+  	/* element\ \{\ color: white; */
+  	color: black;
+}
+.social {
+  padding: 0;
+}
+.theme-1 .social li {
+  display: inline-block;
+  font-size: 2em;
+}
+.theme-1 .social li i {
+  padding: 0.3em 0.7em;
+  background-color: #CBDAC8;
+  /* background-color: #58C4AF; */
+  color: black;
+}
+.theme-1 .row > section {
+	padding-top: 8.8em;
+	background-color: white;
+}
+.filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(137,197,153,0.4);
+  mix-blend-mode: multiply;
+}
+/* .left {
+  height: 100vh;
+} */
+.main_doc {
+	/* background-color: #2a2727;
+  color: white; */
+	padding-top: 9em;
+  transition: 0.5s;
+}
+.markdown-body h2 {
+	font-size: 1.25em;
+	background-color: black;
+	color: white;
+	display: inline-block;
+	padding: 1em;
+	text-transform: uppercase;
+}
+
+/* Modal */
+.modal_doc {
+	position: fixed;
+	top: 0;
+	z-index: 15;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+}
+.modal_doc .container {
+  position: relative;
+  margin-top: 2em;
+}
+.modal_doc img {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-height: 90vh;
+  max-width: 100%;
+  width: auto;
+  /* max-height: 80vh; */
+}
+.modal_doc .btn {
+	position: absolute;
+  right: 1.5em;
+  top: 0.8em;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-size: 1.5em;
+	border: 3px solid white;
+  transition: 0.5s;
+  /* -webkit-background-clip: text;
+  background-clip: text; */
+}
+.modal_doc .btn:hover {
+  background-color: white;
+  color: transparent;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.masonry {
+  /* background: #EEE; */
+  /* max-width: 1024px; */
+}
+
+.masonry .item {
+  position: relative;
+  padding: 10px;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #333;
+  border-radius: 5px;
+  float: left;
+  height: 270px;
+  margin-bottom: 5px;
+  width:  270px;
+  color: white;
+}
+.masonry .item a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.masonry .final {  background-image: url('../../presenation.png'); }
+.masonry .w0 {  background-image: url('../img/fabIsp/component.jpg'); }
+.masonry .w1 {  color: black;  background-image: url('../img/finalProject/beatboxMachin.jpg'); }
+.masonry .w2 {  background-position: bottom; background-image: url('../img/week2/ubuntuBash02.jpg'); }
+.masonry .w3 {  color: black;  background-image: url('../img/week3/PlateauDePression_04.JPG'); }
+.masonry .w4 {  background-image: url('../img/Week4/P1070171.JPG'); }
+.masonry .w5 {  background-image: url('../img/week5/accelero06.jpg'); }
+.masonry .w6 {  background-image: url('../img/week6/printCircuit20.jpg'); }
+.masonry .w7 {  background-image: url('../img/week7/accueil.jpg'); }
+.masonry .w8 {  background-image: url('../img/week8/site1.jpeg'); }
+.masonry .w9 {  background-image: url('../img/week7/helloBoard.jpg'); }
+.masonry .w10 {  background-image: url('../img/week10/stickman.jpg'); }
+.masonry .w11 {  background-image: url('../img/week11/distance pcb mount.jpg'); }
+.masonry .w12 {  background-image: url('../img/week12/helloSpeaker.jpg'); }
+.masonry .w13 {  background-image: url('../img/week13/t45masterV1.jpg'); }
+.masonry .w14 {  background-image: url('../img/week14/hello-blink-master-board.png'); }
+.masonry .w15 {  background-image: url('../img/week15/machinFront.png'); }
+.masonry .w17 {  background-image: url('../img/week17/triangel.JPG'); }
+.masonry .w18 {  background-image: url('../../presenation.png'); }
+.masonry .w19 {  background-image: url('../img/week19/creativeCommons00.png'); }
