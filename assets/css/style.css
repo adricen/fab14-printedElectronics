@@ -1,6 +1,7 @@
 /* Modal */
 body{
 	font-size: 15px;
+	margin: 0;
 }
 
 .modal_doc {
@@ -42,12 +43,13 @@ body{
 }
 .content-wrapper {
 	padding: 5% 0;
+	height: auto;
 }
 .content-wrapper .content{
 	max-width: 1200px;
 	maring: auto;
 }
-/* 
+/*
 .markdown-body {
 	padding: 0 5%;
 }

@@ -31,7 +31,7 @@ var layout_page = new Vue({
       },
       printScreen: {
         title: "Introduction",
-        index: "stretchis.md",
+        index: "printScreen.md",
         content: "",
       },
     },
