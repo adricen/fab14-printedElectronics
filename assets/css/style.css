@@ -25,6 +25,9 @@ body{
   width: auto;
   /* max-height: 80vh; */
 }
+.nav-offcanvas {
+	background: linear-gradient(135deg, #191817 0%, #5c7e6b 100%);
+}
 .modal_doc .btn {
 	position: absolute;
   right: 1.5em;
@@ -44,10 +47,15 @@ body{
 .content-wrapper {
 	padding: 5% 0;
 	height: auto;
+	background: linear-gradient(135deg, #fffff0 0%, #c1c1bf 100%);
+
 }
 .content-wrapper .content{
 	max-width: 1200px;
 	maring: auto;
+}
+@media screen and (max-width: 600px) {
+
 }
 /*
 .markdown-body {

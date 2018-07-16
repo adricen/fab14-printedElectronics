@@ -25,8 +25,13 @@ var layout_page = new Vue({
         content: "",
       },
       stretchis: {
-        title: "Introduction",
+        title: "strechix",
         index: "stretchis.md",
+        content: "",
+      },
+      screenPrinting: {
+        title: "Introduction",
+        index: "screenPrinting.md",
         content: "",
       },
       printScreen: {
@@ -88,11 +93,17 @@ $.each( layout_page.markdown, function(name, value) {
 // console.log(getUrlParameter('page'));
 
 // Aside Navigation
-$('#offCanvas').on('click', function () {
+var display = window.innerWidth
+if( display > 600){
+    $('.nav-offcanvas').addClass('open');
+} else {
+  $('#offCanvas').on('click', function () {
     $('.nav-offcanvas').addClass('open');
     $('.offcanvas-overlay').addClass('on');
-});
-$('#offCanvasClose, .offcanvas-overlay').on('click', function () {
+  });
+  $('#offCanvasClose, .offcanvas-overlay').on('click', function () {
     $('.nav-offcanvas').removeClass('open');
     $('.offcanvas-overlay').removeClass('on');
-});
+  });
+
+}

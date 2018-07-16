@@ -1,17 +1,9 @@
-# PrintScreen: Fabricating Highly Customizable Thin-film Touch-Displays
+# EL Display : print screen
 
-![header](https://www.lri.fr/~wessely/images/printscreen_teaser.jpg)
+# Process
 
-PrintScreen is an enabling technology for digital fabrication of customized flexible displays using thin-film electroluminescence (TFEL). It enables inexpensive and rapid fabrication of highly customized displays in low volume, in a simple lab environment, print shop or even at home. We show how to print ultra-thin (120 m) segmented and passive matrix displays in greyscale or multi-color on a variety of deformable and rigid substrate materials, including PET film, office paper, leather, metal, stone, and wood. The displays can have custom, unconventional 2D shapes and can be bent, rolled and folded to create 3D shapes. We contribute a systematic overview of graphical display primitives for customized displays and show how to integrate them with static print and printed electronics. Furthermore, we contribute a sensing framework, which leverages the display itself for touch sensing. To demonstrate the wide applicability of PrintScreen, we present application examples from ubiquitous, mobile and wearable computing.
+Using different layer of mixtured ink it is possible to make an electroluminescente display. To succed you will need three different ink and an ITO material to support all those layers. Let's see through list.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LiD7dnqY034" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
----
-
-## Download
-
-[paper](https://hci.cs.uni-saarland.de/files/2014/10/PrintScreen.pdf)
-
-## Citation
-
-Simon Olberding, Michael Wessely, and Jürgen Steimle. 2014. PrintScreen: fabricating highly customizable thin-film touch-displays. In Proceedings of the 27th annual ACM symposium on User interface software and technology (UIST '14). ACM, New York, NY, USA, 281-290.
+| Ito surfaces - Indium tin oxide | phosphorus paste | Dielectric paste | Silver paint |
+| --- | --- | --- | --- |
+| [![ito Surfaces](assets\img\ito.jpg)](https://www.pgo-online.com/intl/ito.html) | [![phosphor](assets\img\phosphore-small.jpg)](http://www.gwent.org/gem_data_sheets/polymer_systems_products/electroluminescent_display_materials/green_phosphor_c2070209p5.pdf) | [![White EL Dielectric Paste](assets\img\dielectric.jpg)](http://www.gwent.org/gem_data_sheets/polymer_systems_products/electroluminescent_display_materials/dielectric_paste_white_d2070209p6.pdf) | [![conducting silver](assets\img\silver.gif)](http://www.gwent.org/gem_data_sheets/polymer_systems_products/electroluminescent_display_materials/clear_conductor_c2100629d1.pdf) |
