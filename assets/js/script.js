@@ -93,10 +93,10 @@ $.each( layout_page.markdown, function(name, value) {
 // console.log(getUrlParameter('page'));
 
 // Aside Navigation
-var display = window.innerWidth
-if( display > 600){
-    $('.nav-offcanvas').addClass('open');
-} else {
+// var display = window.innerWidth
+// if( display > 600){
+//     $('.nav-offcanvas').addClass('open');
+// } else {
   $('#offCanvas').on('click', function () {
     $('.nav-offcanvas').addClass('open');
     $('.offcanvas-overlay').addClass('on');
@@ -106,4 +106,4 @@ if( display > 600){
     $('.offcanvas-overlay').removeClass('on');
   });
 
-}
+// }

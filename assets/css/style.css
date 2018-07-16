@@ -26,7 +26,8 @@ body{
   /* max-height: 80vh; */
 }
 .nav-offcanvas {
-	background: linear-gradient(135deg, #191817 0%, #5c7e6b 100%);
+	background: linear-gradient(135deg, #191817 0%, #2a332e 100%);
+	/* background: linear-gradient(135deg, #191817 0%, #5c7e6b 100%); */
 }
 .modal_doc .btn {
 	position: absolute;
@@ -53,6 +54,9 @@ body{
 .content-wrapper .content{
 	max-width: 1200px;
 	maring: auto;
+}
+.hamburger i {
+	color: black;
 }
 @media screen and (max-width: 600px) {
 
